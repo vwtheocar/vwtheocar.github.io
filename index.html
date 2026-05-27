@@ -55,13 +55,21 @@ function searchProducts() {
 
   if (value === "") return;
 
-  // απλό routing search (marketplace logic)
-  if (value.includes("πόρτα") || value.includes("door") || value.includes("χειρολαβ")) {
+  // marketplace routing (πιο έξυπνο)
+  if (
+    value.includes("πόρτα") ||
+    value.includes("door") ||
+    value.includes("χειρολαβ") ||
+    value.includes("golf") ||
+    value.includes("passat") ||
+    value.includes("audi") ||
+    value.includes("vw")
+  ) {
     window.location.href = "doors.html";
     return;
   }
 
-  alert("Δεν βρέθηκε κατηγορία για την αναζήτηση: " + value);
+  alert("Δοκίμασε: πόρτα, golf, passat, audi ή κωδικό ανταλλακτικού");
 }
 </script>
 
