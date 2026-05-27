@@ -12,6 +12,16 @@
   <p style="margin: 5px 0 0 0;">VW Group ανταλλακτικά εσωτερικού χώρου & σπάνιοι κωδικοί</p>
 </div>
 
+  <div style="margin: 20px auto; text-align: center;">
+  <input 
+    type="text" 
+    id="searchInput" 
+    onkeyup="searchProducts()" 
+    placeholder="Αναζήτηση με κωδικό ή προϊόν..."
+    style="padding:10px; width:300px; border:1px solid #ccc; border-radius:6px;"
+  />
+</div>
+
 <!-- SITE UNDER CONSTRUCTION -->
 <p style="margin-top: 30px;">Site υπό κατασκευή.</p>
 
@@ -38,6 +48,22 @@
   <p>Facebook Marketplace & car.gr</p>
   <p>Περισσότερες πληροφορίες σύντομα.</p>
 </div>
+<script>
+function searchProducts() {
+  const input = document.getElementById("searchInput");
+  const filter = input.value.toLowerCase();
+  const items = document.querySelectorAll(".card");
 
+  items.forEach(item => {
+    const text = item.innerText.toLowerCase();
+
+    if (text.includes(filter)) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+</script>
 </body>
 </html>
