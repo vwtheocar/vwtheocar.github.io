@@ -23,9 +23,6 @@
   />
 </div>
 
-<!-- SITE UNDER CONSTRUCTION -->
-<p style="margin-top: 30px;">Site υπό κατασκευή.</p>
-
 <!-- DESCRIPTION -->
 <div style="max-width: 700px; margin: 20px auto; padding: 15px; background: #ffffff; border: 1px solid #ddd; border-radius: 8px; font-weight: bold; line-height: 1.6;">
 Εξειδίκευση σε ανταλλακτικά VW Group με έμφαση σε σπάνια και δυσεύρετα κομμάτια εσωτερικού χώρου.
@@ -50,26 +47,21 @@
   <p>Περισσότερες πληροφορίες σύντομα.</p>
 </div>
 
-<!-- SEARCH SCRIPT -->
+<!-- SEARCH ENGINE -->
 <script>
 function searchProducts() {
   const input = document.getElementById("searchInput");
   const value = input.value.toLowerCase().trim();
 
-  const items = document.querySelectorAll(".card");
+  if (value === "") return;
 
-  // αν δεν υπάρχει τίποτα να ψάξει, σταματάει
-  if (items.length === 0) return;
+  // απλό routing search (marketplace logic)
+  if (value.includes("πόρτα") || value.includes("door") || value.includes("χειρολαβ")) {
+    window.location.href = "doors.html";
+    return;
+  }
 
-  items.forEach(item => {
-    const text = item.innerText.toLowerCase();
-
-    if (text.includes(value)) {
-      item.style.display = "block";
-    } else {
-      item.style.display = "none";
-    }
-  });
+  alert("Δεν βρέθηκε κατηγορία για την αναζήτηση: " + value);
 }
 </script>
 
