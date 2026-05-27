@@ -12,7 +12,8 @@
   <p style="margin: 5px 0 0 0;">VW Group ανταλλακτικά εσωτερικού χώρου & σπάνιοι κωδικοί</p>
 </div>
 
-  <div style="margin: 20px auto; text-align: center;">
+<!-- SEARCH -->
+<div style="margin: 20px auto; text-align: center;">
   <input 
     type="text" 
     id="searchInput" 
@@ -36,7 +37,7 @@
   <h2>Κατηγορίες</h2>
   <div style="margin-top: 15px; font-weight: bold; line-height: 2;">
     <p><a href="doors.html">• Χειρολαβές Πόρτας</a></p>
-    • Χειρολαβές Ουρανού</a></p>
+    <p>• Χειρολαβές Ουρανού</p>
     <p>• Εσωτερικό Σαλονιού</p>
     <p>• Σπάνιοι Κωδικοί VW Group</p>
   </div>
@@ -48,16 +49,22 @@
   <p>Facebook Marketplace & car.gr</p>
   <p>Περισσότερες πληροφορίες σύντομα.</p>
 </div>
+
+<!-- SEARCH SCRIPT -->
 <script>
 function searchProducts() {
   const input = document.getElementById("searchInput");
-  const filter = input.value.toLowerCase();
+  const value = input.value.toLowerCase().trim();
+
   const items = document.querySelectorAll(".card");
+
+  // αν δεν υπάρχει τίποτα να ψάξει, σταματάει
+  if (items.length === 0) return;
 
   items.forEach(item => {
     const text = item.innerText.toLowerCase();
 
-    if (text.includes(filter)) {
+    if (text.includes(value)) {
       item.style.display = "block";
     } else {
       item.style.display = "none";
@@ -65,5 +72,6 @@ function searchProducts() {
   });
 }
 </script>
+
 </body>
 </html>
