@@ -12,66 +12,52 @@
   <p style="margin: 5px 0 0 0;">VW Group ανταλλακτικά εσωτερικού χώρου & σπάνιοι κωδικοί</p>
 </div>
 
-<!-- SEARCH -->
-<div style="margin: 20px auto; text-align: center;">
-  <input 
-    type="text" 
-    id="searchInput" 
-    onkeyup="searchProducts()" 
-    placeholder="Αναζήτηση με κωδικό ή προϊόν..."
-    style="padding:10px; width:300px; border:1px solid #ccc; border-radius:6px;"
-  />
-</div>
-
-<!-- DESCRIPTION -->
-<div style="max-width: 700px; margin: 20px auto; padding: 15px; background: #ffffff; border: 1px solid #ddd; border-radius: 8px; font-weight: bold; line-height: 1.6;">
-Εξειδίκευση σε ανταλλακτικά VW Group με έμφαση σε σπάνια και δυσεύρετα κομμάτια εσωτερικού χώρου.
-Διαθέσιμα επιλεγμένα μεταχειρισμένα και aftermarket είδη.
+<!-- MESSAGE -->
+<div style="margin-top: 25px; font-size: 18px;">
+  👇 Βρες εδώ αυτό που ψάχνεις
 </div>
 
 <!-- CATEGORIES -->
-<div style="margin-top: 40px;">
-  <h2>Κατηγορίες</h2>
-  <div style="margin-top: 15px; font-weight: bold; line-height: 2;">
-    <p><a href="doors.html">• Χειρολαβές Πόρτας</a></p>
-    <p>• Χειρολαβές Ουρανού</p>
-    <p>• Εσωτερικό Σαλονιού</p>
-    <p>• Σπάνιοι Κωδικοί VW Group</p>
+<div style="max-width: 600px; margin: 30px auto;">
+
+  <a href="doors.html" style="display:block; background:#fff; padding:18px; margin-bottom:12px; border-radius:10px; text-decoration:none; color:#111; border:1px solid #ddd;">
+    Χειρολαβές Πόρτας
+  </a>
+
+  <div style="background:#fff; padding:18px; margin-bottom:12px; border-radius:10px; border:1px solid #ddd;">
+    Χειρολαβές Ουρανού
   </div>
+
+  <div style="background:#fff; padding:18px; margin-bottom:12px; border-radius:10px; border:1px solid #ddd;">
+    Διακόπτες
+  </div>
+
+  <div style="background:#fff; padding:18px; margin-bottom:12px; border-radius:10px; border:1px solid #ddd;">
+    Αεραγωγοί
+  </div>
+
+  <div style="background:#fff; padding:18px; margin-bottom:12px; border-radius:10px; border:1px solid #ddd;">
+    Τεμπέληδες, Κλιπς & Εξαρτήματα
+  </div>
+
+  <div style="background:#fff; padding:18px; margin-bottom:12px; border-radius:10px; border:1px solid #ddd;">
+    Κονσόλες
+  </div>
+
+  <div style="background:#fff; padding:18px; margin-bottom:12px; border-radius:10px; border:1px solid #ddd;">
+    Σκιάδια, Κλιπς & Εξαρτήματα
+  </div>
+
+  <div style="background:#fff; padding:18px; margin-bottom:12px; border-radius:10px; border:1px solid #ddd;">
+    Πλαφονιέρες
+  </div>
+
 </div>
 
-<!-- CONTACT -->
-<div style="margin-top: 100px; padding: 20px; background-color: #d6d6d6;">
-  <h3>Επικοινωνία</h3>
-  <p>Facebook Marketplace & car.gr</p>
-  <p>Περισσότερες πληροφορίες σύντομα.</p>
+<!-- FOOTER -->
+<div style="margin-top: 80px; padding: 20px; background:#d6d6d6;">
+  Επικοινωνία: Facebook Marketplace & car.gr
 </div>
-
-<!-- SEARCH ENGINE -->
-<script>
-function searchProducts() {
-  const input = document.getElementById("searchInput");
-  const value = input.value.toLowerCase().trim();
-
-  if (value === "") return;
-
-  // marketplace routing (πιο έξυπνο)
-  if (
-    value.includes("πόρτα") ||
-    value.includes("door") ||
-    value.includes("χειρολαβ") ||
-    value.includes("golf") ||
-    value.includes("passat") ||
-    value.includes("audi") ||
-    value.includes("vw")
-  ) {
-    window.location.href = "doors.html";
-    return;
-  }
-
-  alert("Δοκίμασε: πόρτα, golf, passat, audi ή κωδικό ανταλλακτικού");
-}
-</script>
 
 </body>
 </html>
