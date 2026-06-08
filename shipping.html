@@ -23,17 +23,24 @@
       border: 1px solid #ddd;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 15px;
-      color: #003399;
+    /* ΠΙΣΩ BUTTON ΣΑΝ CATEGORY */
+    .back-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #e8f0ff;
+      padding: 10px 12px;
+      border-radius: 10px;
       text-decoration: none;
-      font-weight: bold;
+      color: #111;
+      border: 1px solid #c9dbff;
       font-size: 14px;
+      margin-bottom: 15px;
+      font-weight: bold;
     }
 
-    .back-link:hover {
-      text-decoration: underline;
+    .back-btn:hover {
+      background: #d6e6ff;
     }
 
     h2 {
@@ -63,6 +70,11 @@
       border-top: 1px solid #ddd;
       margin: 10px 0;
     }
+
+    .dot {
+      color: #003399;
+      font-size: 18px;
+    }
   </style>
 </head>
 
@@ -70,7 +82,10 @@
 
   <div class="box">
 
-    <a href="index.html" class="back-link">← Πίσω στην Αρχική</a>
+    <a href="index.html" class="back-btn">
+      <span class="dot">●</span>
+      Πίσω στην Αρχική
+    </a>
 
     <h2>Επιλογές Αποστολής</h2>
 
