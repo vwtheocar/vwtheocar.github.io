@@ -3,7 +3,6 @@
 
 <head>
   <title>VW Group Parts Theo</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -95,41 +94,60 @@
       object-fit: contain;
     }
 
-    /* TAGLINE */
     .tagline {
       margin-top: 8px;
       font-size: 13px;
-      letter-spacing: 0.5px;
       opacity: 0.9;
       line-height: 1.5;
     }
 
-    /* CATEGORY */
+    /* LIST WRAPPER */
+    .list-wrap {
+      max-width: 650px;
+      margin: 30px auto;
+      text-align: left;
+    }
+
+    /* CATEGORY ROW (NEW STYLE) */
     .category {
       display: flex;
       align-items: center;
-      background: #e8f0ff;
-      padding: 16px;
-      margin-bottom: 14px;
+      justify-content: space-between;
+      background: #fff;
+      padding: 14px 16px;
+      margin-bottom: 12px;
       border-radius: 10px;
       text-decoration: none;
       color: #111;
-      border: 1px solid #c9dbff;
-      font-size: 15px;
+      border: 1px solid #e6e6e6;
+      transition: 0.15s ease;
+    }
+
+    .category:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
 
     .dot {
-      margin-right: 12px;
-      color: #003399;
+      width: 8px;
+      height: 8px;
+      background: #003399;
+      border-radius: 50%;
+      display: inline-block;
     }
 
     .icon {
-      width: 92px;
-      height: 92px;
-      background: #ffffff;   /* <- ΑΛΛΑΓΗ ΕΔΩ */
-      border: 1px solid #e6e6e6; /* <- ΑΛΛΑΓΗ ΕΔΩ */
+      width: 64px;
+      height: 64px;
+      background: #f7f7f7;
+      border: 1px solid #eee;
       border-radius: 8px;
-      margin-right: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -140,6 +158,17 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
+    }
+
+    .text {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .arrow {
+      font-size: 18px;
+      color: #999;
+      margin-left: 10px;
     }
 
     /* FOOTER */
@@ -156,11 +185,6 @@
       justify-content: space-between;
       max-width: 1000px;
       margin: 0 auto;
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -182,7 +206,7 @@
 
     <div class="header-inner">
 
-      <div class="title">
+      <div>
         <div class="title-main">VW Group Parts Theo</div>
         <div class="title-sub">Ανταλλακτικά εσωτερικού χώρου</div>
         <div class="tagline">
@@ -198,61 +222,84 @@
       </div>
 
     </div>
-
   </div>
 
   <div style="margin-top:15px; font-size:18px;">
     👇 Βρες εδώ αυτό που ψάχνεις
   </div>
 
-  <div style="max-width:650px; margin:30px auto; text-align:left;">
+  <div class="list-wrap">
 
     <a href="doors.html" class="category">
-      <span class="dot">●</span>
-      <div class="icon"><img src="door-handles.jpg"></div>
-      Χειρολαβές Πόρτας
+      <div class="left">
+        <span class="dot"></span>
+        <div class="icon"><img src="door-handles.jpg"></div>
+        <div class="text">Χειρολαβές Πόρτας</div>
+      </div>
+      <div class="arrow">›</div>
     </a>
 
     <div class="category">
-      <span class="dot">●</span>
-      <div class="icon"><img src="roof-handles.jpg"></div>
-      Χειρολαβές Ουρανού
+      <div class="left">
+        <span class="dot"></span>
+        <div class="icon"><img src="roof-handles.jpg"></div>
+        <div class="text">Χειρολαβές Ουρανού</div>
+      </div>
+      <div class="arrow">›</div>
     </div>
 
     <div class="category">
-      <span class="dot">●</span>
-      <div class="icon"><img src="switches.jpg"></div>
-      Διακόπτες
+      <div class="left">
+        <span class="dot"></span>
+        <div class="icon"><img src="switches.jpg"></div>
+        <div class="text">Διακόπτες</div>
+      </div>
+      <div class="arrow">›</div>
     </div>
 
     <div class="category">
-      <span class="dot">●</span>
-      <div class="icon"><img src="air-vents.jpg"></div>
-      Αεραγωγοί
+      <div class="left">
+        <span class="dot"></span>
+        <div class="icon"><img src="air-vents.jpg"></div>
+        <div class="text">Αεραγωγοί</div>
+      </div>
+      <div class="arrow">›</div>
     </div>
 
     <div class="category">
-      <span class="dot">●</span>
-      <div class="icon"><img src="armrest-parts.jpg"></div>
-      Τεμπέληδες, Κλιπς & Εξαρτήματα
+      <div class="left">
+        <span class="dot"></span>
+        <div class="icon"><img src="armrest-parts.jpg"></div>
+        <div class="text">Τεμπέληδες, Κλιπς & Εξαρτήματα</div>
+      </div>
+      <div class="arrow">›</div>
     </div>
 
     <div class="category">
-      <span class="dot">●</span>
-      <div class="icon"><img src="center-console.jpg"></div>
-      Κονσόλες
+      <div class="left">
+        <span class="dot"></span>
+        <div class="icon"><img src="center-console.jpg"></div>
+        <div class="text">Κονσόλες</div>
+      </div>
+      <div class="arrow">›</div>
     </div>
 
     <div class="category">
-      <span class="dot">●</span>
-      <div class="icon"><img src="sunvisors.jpg"></div>
-      Σκιάδια, Κλιπς & Εξαρτήματα
+      <div class="left">
+        <span class="dot"></span>
+        <div class="icon"><img src="sunvisors.jpg"></div>
+        <div class="text">Σκιάδια, Κλιπς & Εξαρτήματα</div>
+      </div>
+      <div class="arrow">›</div>
     </div>
 
     <div class="category">
-      <span class="dot">●</span>
-      <div class="icon"><img src="interior-lights.jpg"></div>
-      Πλαφονιέρες
+      <div class="left">
+        <span class="dot"></span>
+        <div class="icon"><img src="interior-lights.jpg"></div>
+        <div class="text">Πλαφονιέρες</div>
+      </div>
+      <div class="arrow">›</div>
     </div>
 
   </div>
