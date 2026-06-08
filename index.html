@@ -10,7 +10,7 @@
     body {
       font-family: Arial;
       margin: 0;
-      padding-top: 80px;
+      padding-top: 60px; /* 🔧 ΜΕΙΩΣΗ ΚΕΝΟΥ - ανέβηκαν όλα */
       background-color: #f5f5f5;
       color: #111;
       text-align: center;
@@ -61,11 +61,11 @@
       font-weight: bold;
     }
 
-    /* HEADER (FIX CENTER ALIGN) */
+    /* HEADER */
     .header {
       background: linear-gradient(90deg, #003399, #002a6b);
       color: white;
-      padding: 30px 10px 25px 10px;
+      padding: 22px 10px 0 10px; /* 🔧 λιγότερος πάνω αέρας */
     }
 
     .header-inner {
@@ -74,22 +74,17 @@
       align-items: center;
       max-width: 1000px;
       margin: 0 auto;
-      min-height: 110px; /* κλειδώνει το ύψος για σωστό κέντρο */
     }
 
     .title {
       text-align: center;
       flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
 
     .title-main {
       font-size: 40px;
       font-weight: 800;
       letter-spacing: 0.5px;
-      line-height: 1.1;
     }
 
     .title-sub {
@@ -121,7 +116,7 @@
       padding: 10px 12px;
       text-align: center;
       line-height: 1.5;
-      margin-top: 10px;
+      margin-top: 6px; /* 🔧 πιο κοντά από πριν */
     }
 
     .category {
@@ -223,7 +218,6 @@
       .header-inner {
         flex-direction: column;
         gap: 10px;
-        min-height: unset;
       }
 
       .logos {
