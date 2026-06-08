@@ -53,27 +53,30 @@
       margin: 10px 0;
     }
 
-    /* ΣΩΣΤΟ BACK BUTTON */
-    .back-btn {
-      display: inline-flex;
+    /* ΠΙΣΩ ΙΔΙΟ ΜΕ ΚΑΤΗΓΟΡΙΕΣ */
+    .back {
+      display: flex;
       align-items: center;
-      gap: 8px;
-      background: #003399;
-      color: #fff;
-      padding: 10px 16px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: bold;
+      background: #e8f0ff;
+      padding: 12px;
       margin-top: 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #111;
+      border: 1px solid #c9dbff;
+      font-size: 15px;
+      font-weight: bold;
+      justify-content: center;
     }
 
-    .back-btn:hover {
-      background: #002a6b;
+    .back:hover {
+      background: #d6e6ff;
     }
 
-    .arrow {
-      font-size: 16px;
+    .dot {
+      margin-right: 8px;
+      color: #003399;
+      font-size: 18px;
     }
   </style>
 </head>
@@ -109,12 +112,10 @@
       Χωρίς αντικαταβολή</span>
     </div>
 
-    <div style="text-align:center;">
-      <a href="index.html" class="back-btn">
-        <span class="arrow">⬅</span>
-        Πίσω
-      </a>
-    </div>
+    <a href="index.html" class="back">
+      <span class="dot">⬅</span>
+      Πίσω
+    </a>
 
   </div>
 
