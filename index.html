@@ -35,26 +35,42 @@
       color: #fff;
     }
 
-    /* NAV BAR (πλέον με αέρα από πάνω) */
+    /* NAV BAR (RESTORED FULL FUNCTION) */
     .nav-bar {
-      margin-top: 55px; /* ΔΙΝΕΙ ΑΕΡΑ ΑΠΟ ΤΗ ΜΑΥΡΗ */
+      margin-top: 55px; /* αέρας από μαύρη */
       background: #b9d9ff;
       border-bottom: 1px solid #8fbef0;
-      padding: 7px 0;
+      padding: 8px 0;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
     }
 
     .nav-bar a {
-      margin: 0 28px;
       text-decoration: none;
       color: #0b1b2b;
       font-size: 13px;
       letter-spacing: 2px;
       font-weight: 500;
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
     .nav-bar a:hover {
-      font-weight: bold;
+      background: #7fb3ff;
+      color: #000;
+    }
+
+    .nav-bar a::before {
+      content: "●";
+      font-size: 10px;
+      color: #003399;
     }
 
     /* HEADER */
@@ -109,10 +125,9 @@
       padding-top: 10px;
     }
 
-    /* 👇 moved LEFT */
     .intro {
       max-width: 650px;
-      margin: 20px auto 10px auto;
+      margin: 18px auto 8px auto;
       text-align: left;
       font-size: 17px;
       font-weight: 500;
@@ -120,7 +135,7 @@
 
     .category-wrapper {
       max-width: 650px;
-      margin: 0 auto 30px auto;
+      margin: 0 auto 25px auto;
       text-align: left;
     }
 
@@ -155,7 +170,7 @@
 
     /* FOOTER */
     .footer {
-      margin-top: 60px;
+      margin-top: 35px; /* ΜΕΙΩΣΗ ΚΕΝΟΥ */
       padding: 12px 10px;
       background: #002a6b;
       color: white;
@@ -213,10 +228,6 @@
       .footer-right {
         text-align: center;
       }
-
-      .intro {
-        text-align: center;
-      }
     }
   </style>
 </head>
@@ -228,7 +239,10 @@
   </div>
 
   <div class="nav-bar">
-    ΑΡΧΙΚΗ • ΠΡΟΣΦΟΡΕΣ • ΤΡΟΠΟΙ ΑΠΟΣΤΟΛΗΣ • ΕΠΙΚΟΙΝΩΝΙΑ
+    <a href="index.html">ΑΡΧΙΚΗ</a>
+    <a href="offers.html">ΠΡΟΣΦΟΡΕΣ</a>
+    <a href="shipping.html">ΤΡΟΠΟΙ ΑΠΟΣΤΟΛΗΣ</a>
+    <a href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
   </div>
 
   <div class="header">
