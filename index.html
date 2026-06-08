@@ -60,6 +60,7 @@
       object-fit: contain;
     }
 
+    /* DESCRIPTION */
     .desc {
       max-width: 700px;
       margin: 25px auto;
@@ -69,6 +70,38 @@
       border-radius: 8px;
       font-weight: bold;
       line-height: 1.6;
+    }
+
+    /* CATEGORIES */
+    .category {
+      display: flex;
+      align-items: center;
+      background: #e8f0ff;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #111;
+      border: 1px solid #c9dbff;
+      font-size: 15px;
+    }
+
+    .dot {
+      margin-right: 10px;
+      color: #003399;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      background: #dfe9ff;
+      border-radius: 8px;
+      margin-right: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6b7aa8;
+      font-size: 12px;
     }
 
     /* FOOTER */
@@ -152,6 +185,17 @@
         font-size: 26px;
       }
 
+      .category {
+        font-size: 16px;
+        padding: 16px;
+        background: #d6e6ff;
+      }
+
+      .icon {
+        width: 70px;
+        height: 70px;
+      }
+
       .footer-inner {
         flex-direction: column;
         text-align: center;
@@ -198,6 +242,30 @@
   <div class="desc">
     Εξειδίκευση σε ανταλλακτικά VW Group εσωτερικού χώρου, με επιλεγμένα aftermarket και γνήσια μεταχειρισμένα είδη.
     Έμφαση σε δυσεύρετα και σπάνια κομμάτια.
+  </div>
+
+  <!-- CTA -->
+  <div style="margin-top:15px; font-size:18px;">
+    👇 Βρες εδώ αυτό που ψάχνεις
+  </div>
+
+  <!-- CATEGORIES -->
+  <div style="max-width:650px; margin:30px auto; text-align:left;">
+
+    <a href="doors.html" class="category">
+      <span class="dot">●</span>
+      <div class="icon">εικόνα</div>
+      Χειρολαβές Πόρτας
+    </a>
+
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Χειρολαβές Ουρανού</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Διακόπτες</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Αεραγωγοί</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Τεμπέληδες, Κλιπς & Εξαρτήματα</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Κονσόλες</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Σκιάδια, Κλιπς & Εξαρτήματα</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Πλαφονιέρες</div>
+
   </div>
 
   <!-- FOOTER -->
