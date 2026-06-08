@@ -16,7 +16,7 @@
       text-align: center;
     }
 
-    /* ===== TOP BAR (ΝΕΟ) ===== */
+    /* ===== TOP BAR ===== */
     .topbar {
       position: fixed;
       top: 0;
@@ -25,6 +25,7 @@
       background: #111;
       color: #fff;
       font-size: 14px;
+      letter-spacing: 1.5px;
       padding: 10px 15px;
       z-index: 9999;
       display: flex;
@@ -41,6 +42,11 @@
 
     .topbar a:hover {
       text-decoration: underline;
+    }
+
+    .phone-number {
+      color: #ff2b2b;
+      font-weight: bold;
     }
 
     /* HEADER */
@@ -240,13 +246,11 @@
 
 <body>
 
-  <!-- TOP BAR (ΜΟΝΟ ΑΥΤΟ ΠΡΟΣΤΕΘΗΚΕ) -->
   <div class="topbar">
-    ΓΙΑ ΠΑΡΑΓΓΕΛΙΑ ΚΑΛΕΣΤΕ ΣΤΟ 6987168152 |
+    ΓΙΑ ΠΑΡΑΓΓΕΛΙΑ ΚΑΛΕΣΤΕ 👉 <span class="phone-number">6987168152</span> |
     <a href="shipping.html" target="_blank">ΤΡΟΠΟΙ ΑΠΟΣΤΟΛΗΣ</a>
   </div>
 
-  <!-- HEADER -->
   <div class="header">
 
     <div class="header-inner">
@@ -267,18 +271,15 @@
 
   </div>
 
-  <!-- DESCRIPTION -->
   <div class="desc">
     Εξειδίκευση σε ανταλλακτικά VW Group εσωτερικού χώρου, με επιλεγμένα aftermarket και γνήσια μεταχειρισμένα είδη.
     Έμφαση σε δυσεύρετα και σπάνια κομμάτια.
   </div>
 
-  <!-- CTA -->
   <div style="margin-top:15px; font-size:18px;">
     👇 Βρες εδώ αυτό που ψάχνεις
   </div>
 
-  <!-- CATEGORIES -->
   <div style="max-width:650px; margin:30px auto; text-align:left;">
 
     <a href="doors.html" class="category">
@@ -297,7 +298,6 @@
 
   </div>
 
-  <!-- FOOTER -->
   <div class="footer">
     <div class="footer-inner">
 
