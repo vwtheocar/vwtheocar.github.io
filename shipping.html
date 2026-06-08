@@ -53,19 +53,30 @@
       margin: 10px 0;
     }
 
-    /* ΠΙΣΩ όπως κατηγορίες */
-    .back {
+    /* ΠΙΣΩ ΜΠΛΕ ΚΟΥΤΙ όπως κατηγορίες */
+    .back-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #e8f0ff;
+      padding: 12px;
       margin-top: 25px;
-      display: block;
-      text-align: center;
-      font-size: 14px;
-      color: #003399;
+      border-radius: 10px;
       text-decoration: none;
+      color: #111;
+      border: 1px solid #c9dbff;
+      font-size: 15px;
       font-weight: bold;
+      justify-content: center;
     }
 
-    .back:hover {
-      text-decoration: underline;
+    .back-box:hover {
+      background: #d6e6ff;
+    }
+
+    .dot {
+      color: #003399;
+      font-size: 18px;
     }
   </style>
 </head>
@@ -101,7 +112,10 @@
       Χωρίς αντικαταβολή</span>
     </div>
 
-    <a href="index.html" class="back">Πίσω</a>
+    <a href="index.html" class="back-box">
+      <span class="dot">⬅</span>
+      Πίσω
+    </a>
 
   </div>
 
