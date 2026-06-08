@@ -153,60 +153,50 @@
       font-size: 12px;
     }
 
-    /* FOOTER */
+    /* FOOTER (ΠΙΟ ΛΕΠΤΟ + ΟΡΙΖΟΝΤΙΟ) */
     .footer {
       margin-top: 60px;
-      padding: 25px 10px;
+      padding: 12px 10px;
       background: #002a6b;
       color: white;
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
       max-width: 1000px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
 
-    .footer-block {
-      flex: 1;
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .footer-left {
-      text-align: left;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .footer-sub {
       font-weight: normal;
-      font-size: 12px;
-      margin-top: 6px;
+      font-size: 11px;
       opacity: 0.9;
-    }
-
-    .footer-center {
-      text-align: center;
-      line-height: 1.8;
-    }
-
-    .footer-right {
-      text-align: right;
     }
 
     .footer-title {
       font-weight: bold;
-      margin-bottom: 10px;
-      font-size: 13px;
       color: orange;
+      margin-right: 6px;
     }
 
-    .footer-links {
-      display: flex;
-      gap: 12px;
-      justify-content: flex-end;
+    .footer-links a {
+      margin: 0 8px;
     }
 
     a {
@@ -242,20 +232,9 @@
         height: 80px;
       }
 
-      .footer-inner {
+      .footer-row {
         flex-direction: column;
         text-align: center;
-        gap: 15px;
-      }
-
-      .footer-left,
-      .footer-center,
-      .footer-right {
-        text-align: center;
-      }
-
-      .footer-links {
-        justify-content: center;
       }
     }
   </style>
@@ -321,37 +300,32 @@
   </div>
 
   <div class="footer">
+
     <div class="footer-inner">
 
-      <div class="footer-block footer-left">
-        VW Group Parts Theo
-        <div class="footer-sub">Ανταλλακτικά εσωτερικού χώρου</div>
-      </div>
-
-      <div class="footer-block footer-center">
-
-        <div class="footer-title">ΕΠΙΚΟΙΝΩΝΙΑ</div>
+      <!-- ROW 1 -->
+      <div class="footer-row">
+        <div class="footer-left">
+          VW Group Parts Theo
+        </div>
 
         <div>
-          📞 <a href="tel:6987168152">6987168152</a> |
+          ΕΠΙΚΟΙΝΩΝΙΑ:
+          📞 <a href="tel:6987168152">6987168152</a>
           📱 <a href="viber://chat?number=+306987168152">Viber</a>
+          ✉️ <a href="mailto:theo01475@yahoo.gr">Email</a>
         </div>
-
-        <div>
-          ✉️ <a href="mailto:theo01475@yahoo.gr">theo01475@yahoo.gr</a>
-        </div>
-
       </div>
 
-      <div class="footer-block footer-right">
-
-        <div class="footer-title">LINKS</div>
+      <!-- ROW 2 -->
+      <div class="footer-row">
+        <div></div>
 
         <div class="footer-links">
+          LINKS:
           <a href="https://www.car.gr/user/7gtmib/" target="_blank">car.gr</a>
           <a href="https://www.skroutz.gr/u/theo1410/skoop" target="_blank">Skroutz</a>
         </div>
-
       </div>
 
     </div>
@@ -359,7 +333,4 @@
 
 </body>
 
-</html>
-
-</body>
 </html>
