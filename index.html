@@ -62,7 +62,7 @@
     .header {
       background: linear-gradient(90deg, #003399, #002a6b);
       color: white;
-      padding: 28px 10px 10px 10px;
+      padding: 28px 10px 0 10px;
     }
 
     .header-inner {
@@ -81,6 +81,7 @@
     .title-sub {
       font-size: 15px;
       margin-top: 6px;
+      opacity: 0.95;
     }
 
     .logos {
@@ -94,11 +95,15 @@
       object-fit: contain;
     }
 
-    .tagline {
-      margin-top: 8px;
+    /* ORANGE TAGLINE BAR (RESTORED) */
+    .tagline-bar {
+      margin-top: 18px;
+      background: #ff9a3c;
+      color: #111;
       font-size: 13px;
-      opacity: 0.9;
-      line-height: 1.5;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      padding: 8px 10px;
     }
 
     /* LIST WRAPPER */
@@ -108,7 +113,7 @@
       text-align: left;
     }
 
-    /* CATEGORY ROW (NEW STYLE) */
+    /* CATEGORY ROW */
     .category {
       display: flex;
       align-items: center;
@@ -186,6 +191,7 @@
       max-width: 1000px;
       margin: 0 auto;
     }
+
   </style>
 </head>
 
@@ -209,9 +215,6 @@
       <div>
         <div class="title-main">VW Group Parts Theo</div>
         <div class="title-sub">Ανταλλακτικά εσωτερικού χώρου</div>
-        <div class="tagline">
-          Εξειδίκευση σε ανταλλακτικά VW Group εσωτερικού χώρου • Aftermarket & γνήσια μεταχειρισμένα • Δυσεύρετα και σπάνια κομμάτια
-        </div>
       </div>
 
       <div class="logos">
@@ -222,6 +225,11 @@
       </div>
 
     </div>
+
+    <div class="tagline-bar">
+      Εξειδίκευση σε ανταλλακτικά VW Group εσωτερικού χώρου • Aftermarket & γνήσια μεταχειρισμένα • Δυσεύρετα και σπάνια κομμάτια
+    </div>
+
   </div>
 
   <div style="margin-top:15px; font-size:18px;">
