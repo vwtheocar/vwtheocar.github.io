@@ -4,7 +4,6 @@
 <head>
   <title>VW Group Parts Theo</title>
 
-</div>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -17,20 +16,6 @@
       text-align: center;
     }
 
-    /* HEADER LOGOS */
-<div class="logos" style="display:flex; justify-content:center; gap:10px; margin-bottom:10px; flex-wrap:wrap; align-items:center;">
-
-  <img src="vw.png" style="width:60px; height:60px; object-fit:contain; display:block;">
-
-  <img src="audi.png" style="width:60px; height:60px; object-fit:contain; display:block;">
-
-  <img src="skoda.png" style="width:60px; height:60px; object-fit:contain; display:block;">
-
-  <img src="seat.png" style="width:60px; height:60px; object-fit:contain; display:block;">
-
-</div>
-    
-    /* CATEGORIES */
     .category {
       display: flex;
       align-items: center;
@@ -62,18 +47,7 @@
       font-size: 12px;
     }
 
-    /* MOBILE FIX */
     @media (max-width: 768px) {
-
-      .logos img {
-        width: 50px;
-        height: 50px;
-      }
-
-      h1 {
-        font-size: 24px;
-      }
-
       .category {
         font-size: 16px;
         padding: 16px;
@@ -84,12 +58,6 @@
         width: 70px;
         height: 70px;
       }
-
-      .support {
-        font-size: 13px;
-        padding: 14px;
-      }
-
     }
   </style>
 </head>
@@ -99,11 +67,13 @@
   <!-- HEADER -->
   <div style="background-color:#003399; color:white; padding:20px 10px;">
 
-    <div class="logos" style="display:flex; justify-content:center; gap:10px; margin-bottom:10px; flex-wrap:wrap;">
-      <img src="https://via.placeholder.com/35">
-      <img src="https://via.placeholder.com/35">
-      <img src="https://via.placeholder.com/35">
-      <img src="https://via.placeholder.com/35">
+    <div style="display:flex; justify-content:center; gap:10px; margin-bottom:10px; flex-wrap:wrap; align-items:center;">
+
+      <img src="vw.png" style="width:60px; height:60px; object-fit:contain;">
+      <img src="audi.png" style="width:60px; height:60px; object-fit:contain;">
+      <img src="skoda.png" style="width:60px; height:60px; object-fit:contain;">
+      <img src="seat.png" style="width:60px; height:60px; object-fit:contain;">
+
     </div>
 
     <div style="text-align:center;">
@@ -125,8 +95,7 @@
   </div>
 
   <!-- DESCRIPTION -->
-  <div
-    style="max-width:700px; margin:25px auto; padding:15px; background:#ffffff; border:1px solid #ddd; border-radius:8px; font-weight:bold; line-height:1.6;">
+  <div style="max-width:700px; margin:25px auto; padding:15px; background:#ffffff; border:1px solid #ddd; border-radius:8px; font-weight:bold; line-height:1.6;">
     Εξειδίκευση σε ανταλλακτικά VW Group εσωτερικού χώρου, με επιλεγμένα aftermarket και γνήσια μεταχειρισμένα είδη.
     Έμφαση σε δυσεύρετα και σπάνια κομμάτια.
   </div>
@@ -145,73 +114,38 @@
       Χειρολαβές Πόρτας
     </a>
 
-    <div class="category">
-      <span class="dot">●</span>
-      <div class="icon">εικόνα</div>
-      Χειρολαβές Ουρανού
-    </div>
-
-    <div class="category">
-      <span class="dot">●</span>
-      <div class="icon">εικόνα</div>
-      Διακόπτες
-    </div>
-
-    <div class="category">
-      <span class="dot">●</span>
-      <div class="icon">εικόνα</div>
-      Αεραγωγοί
-    </div>
-
-    <div class="category">
-      <span class="dot">●</span>
-      <div class="icon">εικόνα</div>
-      Τεμπέληδες, Κλιπς & Εξαρτήματα
-    </div>
-
-    <div class="category">
-      <span class="dot">●</span>
-      <div class="icon">εικόνα</div>
-      Κονσόλες
-    </div>
-
-    <div class="category">
-      <span class="dot">●</span>
-      <div class="icon">εικόνα</div>
-      Σκιάδια, Κλιπς & Εξαρτήματα
-    </div>
-
-    <div class="category">
-      <span class="dot">●</span>
-      <div class="icon">εικόνα</div>
-      Πλαφονιέρες
-    </div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Χειρολαβές Ουρανού</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Διακόπτες</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Αεραγωγοί</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Τεμπέληδες, Κλιπς & Εξαρτήματα</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Κονσόλες</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Σκιάδια, Κλιπς & Εξαρτήματα</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Πλαφονιέρες</div>
 
   </div>
 
   <!-- SUPPORT -->
-  <div class="support"
-    style="max-width:650px; margin:40px auto 0 auto; padding:12px 15px; font-size:12px; line-height:1.6; color:#444; background:#fff7f0; border-left:4px solid #ff8c00; border-radius:6px; text-align:center;">
+  <div style="max-width:650px; margin:40px auto 0 auto; padding:12px 15px; font-size:12px; line-height:1.6; color:#444; background:#fff7f0; border-left:4px solid #ff8c00; border-radius:6px; text-align:center;">
 
     <b>Δυσκολεύεστε να βρείτε κάποιο ανταλλακτικό; Επικοινωνήστε μαζί μας!</b><br>
-    Αναλαμβάνουμε να το εντοπίσουμε για εσάς — γνήσιο, aftermarket ή μεταχειρισμένο, ακόμα κι αν δεν υπάρχει στις
-    λίστες μας.<br>
-    Με εμπειρία σε εξαρτήματα εσωτερικού χώρου VW Group και πρόσβαση σε ευρύτερο δίκτυο συνεργατών, μπορούμε να βρούμε
-    κομμάτια που δύσκολα εντοπίζονται.
+    Αναλαμβάνουμε να το εντοπίσουμε για εσάς — γνήσιο, aftermarket ή μεταχειρισμένο, ακόμα κι αν δεν υπάρχει στις λίστες μας.<br>
+    Με εμπειρία σε εξαρτήματα εσωτερικού χώρου VW Group και πρόσβαση σε ευρύτερο δίκτυο συνεργατών, μπορούμε να βρούμε κομμάτια που δύσκολα εντοπίζονται.
 
+  </div>
+
+  <!-- FOOTER -->
   <div style="margin-top:60px; padding:15px; background:#003399; color:white; font-size:13px;">
 
-  <!-- ΟΝΟΜΑ ΑΡΙΣΤΕΡΑ -->
-  <div style="font-weight:bold; text-align:left; margin-bottom:10px;">
-    VW Group Parts Theo
+    <div style="font-weight:bold; text-align:left; margin-bottom:10px;">
+      VW Group Parts Theo
+    </div>
+
+    <div style="text-align:center;">
+      Επικοινωνία | Facebook Marketplace | car.gr
+    </div>
+
   </div>
 
-  <!-- LINKS ΚΕΝΤΡΟ -->
-  <div style="text-align:center;">
-    Επικοινωνία | Facebook Marketplace | car.gr
-  </div>
-
-</div>
 </body>
 
 </html>
