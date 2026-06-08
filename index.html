@@ -60,38 +60,6 @@
       object-fit: contain;
     }
 
-    .category {
-      display: flex;
-      align-items: center;
-      background: #e8f0ff;
-      padding: 12px;
-      margin-bottom: 12px;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #111;
-      border: 1px solid #c9dbff;
-      font-size: 15px;
-    }
-
-    .dot {
-      margin-right: 10px;
-      color: #003399;
-    }
-
-    .icon {
-      width: 80px;
-      height: 80px;
-      background: #dfe9ff;
-      border-radius: 8px;
-      margin-right: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #6b7aa8;
-      font-size: 12px;
-    }
-
-    /* DESCRIPTION */
     .desc {
       max-width: 700px;
       margin: 25px auto;
@@ -151,17 +119,21 @@
       margin-bottom: 10px;
       font-size: 13px;
       color: orange;
-      letter-spacing: 0.5px;
-    }
-
-    .footer-row {
-      margin-bottom: 6px;
     }
 
     .footer-links {
       display: flex;
       gap: 12px;
       justify-content: flex-end;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     /* MOBILE */
@@ -178,17 +150,6 @@
 
       .title-main {
         font-size: 26px;
-      }
-
-      .category {
-        font-size: 16px;
-        padding: 16px;
-        background: #d6e6ff;
-      }
-
-      .icon {
-        width: 70px;
-        height: 70px;
       }
 
       .footer-inner {
@@ -239,11 +200,6 @@
     Έμφαση σε δυσεύρετα και σπάνια κομμάτια.
   </div>
 
-  <!-- CTA -->
-  <div style="margin-top:15px; font-size:18px;">
-    👇 Βρες εδώ αυτό που ψάχνεις
-  </div>
-
   <!-- FOOTER -->
   <div class="footer">
 
@@ -258,8 +214,14 @@
 
         <div class="footer-title">ΕΠΙΚΟΙΝΩΝΙΑ</div>
 
-        <div class="footer-row">📞 69XXXXXXXX | 📱 Viber</div>
-        <div class="footer-row">✉️ Email</div>
+        <div>
+          📞 <a href="tel:6987168152">6987168152</a> |
+          📱 <a href="https://wa.me/6987168152">Viber</a>
+        </div>
+
+        <div>
+          ✉️ <a href="mailto:theo01475@yahoo.gr">theo01475@yahoo.gr</a>
+        </div>
 
       </div>
 
@@ -268,8 +230,8 @@
         <div class="footer-title">LINKS</div>
 
         <div class="footer-links">
-          <div>car.gr</div>
-          <div>Skroutz</div>
+          <a href="https://www.car.gr/user/7gtmib/" target="_blank">car.gr</a>
+          <a href="https://www.skroutz.gr/u/theo1410/skoop" target="_blank">Skroutz</a>
         </div>
 
       </div>
