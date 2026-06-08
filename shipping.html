@@ -12,6 +12,7 @@
       margin: 0;
       padding: 20px;
       color: #111;
+      text-align: center;
     }
 
     .box {
@@ -21,26 +22,7 @@
       padding: 25px;
       border-radius: 10px;
       border: 1px solid #ddd;
-    }
-
-    /* ΠΙΣΩ BUTTON ΣΑΝ CATEGORY */
-    .back-btn {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      background: #e8f0ff;
-      padding: 10px 12px;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #111;
-      border: 1px solid #c9dbff;
-      font-size: 14px;
-      margin-bottom: 15px;
-      font-weight: bold;
-    }
-
-    .back-btn:hover {
-      background: #d6e6ff;
+      text-align: left;
     }
 
     h2 {
@@ -71,9 +53,19 @@
       margin: 10px 0;
     }
 
-    .dot {
+    /* ΠΙΣΩ όπως κατηγορίες */
+    .back {
+      margin-top: 25px;
+      display: block;
+      text-align: center;
+      font-size: 14px;
       color: #003399;
-      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -81,11 +73,6 @@
 <body>
 
   <div class="box">
-
-    <a href="index.html" class="back-btn">
-      <span class="dot">●</span>
-      Πίσω στην Αρχική
-    </a>
 
     <h2>Επιλογές Αποστολής</h2>
 
@@ -113,6 +100,8 @@
       Κόστος: 3,50€<br>
       Χωρίς αντικαταβολή</span>
     </div>
+
+    <a href="index.html" class="back">Πίσω</a>
 
   </div>
 
