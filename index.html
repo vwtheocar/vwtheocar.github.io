@@ -14,22 +14,24 @@
 
     /* TOP BAR */
     .top-bar {
-      background: #1f1f1f;
+      background: #2b2b2b;
       color: #fff;
       text-align: center;
       padding: 10px;
       font-size: 14px;
     }
 
+    .top-bar .phone {
+      font-weight: bold;
+      margin-left: 5px;
+    }
+
     .top-bar a {
       color: #ffd700;
       text-decoration: none;
-      font-weight: bold;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 15px;
     }
 
-    /* HEADER */
     header {
       background: #ffffff;
       padding: 20px;
@@ -41,7 +43,6 @@
       max-height: 80px;
     }
 
-    /* NAV */
     nav {
       background: #333;
       display: flex;
@@ -60,7 +61,6 @@
       background: #555;
     }
 
-    /* CONTENT */
     .content {
       padding: 20px;
     }
@@ -72,7 +72,6 @@
       border-radius: 6px;
     }
 
-    /* FOOTER */
     footer {
       background: #1f1f1f;
       color: #fff;
@@ -90,9 +89,9 @@
 
 <body>
 
-  <!-- TOP BAR -->
+  <!-- TOP BAR (ΜΟΝΟ ΑΥΤΟ ΑΛΛΑΞΕ) -->
   <div class="top-bar">
-    ΓΙΑ ΠΑΡΑΓΓΕΛΙΑ ΚΑΛΕΣΤΕ ΣΤΟ 6987168152
+    ΓΙΑ ΠΑΡΑΓΓΕΛΙΑ ΚΑΛΕΣΤΕ ΣΤΟ <span class="phone">6987168152</span>
     <a href="shipping.html">ΤΡΟΠΟΙ ΑΠΟΣΤΟΛΗΣ</a>
   </div>
 
@@ -101,7 +100,7 @@
     <img src="logo.png" alt="VW Theo Car Parts">
   </header>
 
-  <!-- NAVIGATION -->
+  <!-- NAV -->
   <nav>
     <a href="#">Golf</a>
     <a href="#">Passat</a>
@@ -111,12 +110,10 @@
 
   <!-- CONTENT -->
   <div class="content">
-
     <div class="category">
       <h3>VW Group Ανταλλακτικά</h3>
       <p>Επιλεγμένα μεταχειρισμένα ανταλλακτικά με τηλεφωνική παραγγελία.</p>
     </div>
-
   </div>
 
   <!-- FOOTER -->
