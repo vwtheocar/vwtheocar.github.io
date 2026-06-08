@@ -61,11 +61,11 @@
       font-weight: bold;
     }
 
-    /* HEADER */
+    /* HEADER (FIX CENTER ALIGN) */
     .header {
       background: linear-gradient(90deg, #003399, #002a6b);
       color: white;
-      padding: 28px 10px 0 10px;
+      padding: 30px 10px 25px 10px;
     }
 
     .header-inner {
@@ -74,17 +74,22 @@
       align-items: center;
       max-width: 1000px;
       margin: 0 auto;
+      min-height: 110px; /* κλειδώνει το ύψος για σωστό κέντρο */
     }
 
     .title {
       text-align: center;
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .title-main {
       font-size: 40px;
       font-weight: 800;
       letter-spacing: 0.5px;
+      line-height: 1.1;
     }
 
     .title-sub {
@@ -218,6 +223,7 @@
       .header-inner {
         flex-direction: column;
         gap: 10px;
+        min-height: unset;
       }
 
       .logos {
@@ -288,15 +294,18 @@
 
     </div>
 
-    <div class="info-bar">
-      Εξειδίκευση σε ανταλλακτικά VW Group εσωτερικού χώρου • Aftermarket & γνήσια μεταχειρισμένα • Δυσεύρετα και σπάνια κομμάτια
-    </div>
+  </div>
 
+  <div class="info-bar">
+    Εξειδίκευση σε ανταλλακτικά VW Group εσωτερικού χώρου • Aftermarket & γνήσια μεταχειρισμένα • Δυσεύρετα και σπάνια κομμάτια
   </div>
 
   <div style="margin-top:15px; font-size:18px;">
     👇 Βρες εδώ αυτό που ψάχνεις
   </div>
+
+</body>
+</html>
 
   <div style="max-width:650px; margin:30px auto; text-align:left;">
 
