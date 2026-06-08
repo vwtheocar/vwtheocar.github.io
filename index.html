@@ -38,7 +38,6 @@
     .title-main {
       font-size: 36px;
       font-weight: 700;
-      letter-spacing: 0.5px;
       text-shadow: 0 2px 6px rgba(0,0,0,0.35);
     }
 
@@ -53,7 +52,6 @@
       gap: 28px;
       align-items: center;
       justify-content: flex-end;
-      flex: 0;
     }
 
     .logos img {
@@ -62,7 +60,6 @@
       object-fit: contain;
     }
 
-    /* CATEGORIES */
     .category {
       display: flex;
       align-items: center;
@@ -94,6 +91,53 @@
       font-size: 12px;
     }
 
+    /* FOOTER */
+    .footer {
+      margin-top: 60px;
+      padding: 20px 10px;
+      background: #003399;
+      color: white;
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      flex: 1;
+    }
+
+    .footer-left {
+      text-align: left;
+    }
+
+    .footer-center {
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .footer-right {
+      text-align: right;
+      line-height: 1.6;
+    }
+
+    .footer-brand {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .footer-sub {
+      opacity: 0.9;
+      font-size: 12px;
+    }
+
     /* MOBILE */
     @media (max-width: 768px) {
 
@@ -105,11 +149,6 @@
 
       .logos {
         justify-content: center;
-      }
-
-      .logos img {
-        width: 60px;
-        height: 60px;
       }
 
       .title-main {
@@ -126,6 +165,18 @@
         width: 70px;
         height: 70px;
       }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .footer-left,
+      .footer-center,
+      .footer-right {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -139,7 +190,7 @@
 
       <div class="title">
         <div class="title-main">VW Group Parts Theo</div>
-        <div class="title-sub">Ανταλλακτικά εσωτερικού χώρου</div>
+        <div class="title-sub">Ανταλλακτικά εσωτερικού χώρου VW Group</div>
       </div>
 
       <div class="logos">
@@ -189,24 +240,27 @@
 
   </div>
 
-  <!-- SUPPORT -->
-  <div style="max-width:650px; margin:40px auto 0 auto; padding:12px 15px; font-size:12px; line-height:1.6; color:#444; background:#fff7f0; border-left:4px solid #ff8c00; border-radius:6px; text-align:center;">
-
-    <b>Δυσκολεύεστε να βρείτε κάποιο ανταλλακτικό; Επικοινωνήστε μαζί μας!</b><br>
-    Αναλαμβάνουμε να το εντοπίσουμε για εσάς — γνήσιο, aftermarket ή μεταχειρισμένο, ακόμα κι αν δεν υπάρχει στις λίστες μας.<br>
-    Με εμπειρία σε εξαρτήματα εσωτερικού χώρου VW Group και πρόσβαση σε ευρύτερο δίκτυο συνεργατών, μπορούμε να βρούμε κομμάτια που δύσκολα εντοπίζονται.
-
-  </div>
-
   <!-- FOOTER -->
-  <div style="margin-top:60px; padding:15px; background:#003399; color:white; font-size:13px;">
+  <div class="footer">
 
-    <div style="font-weight:bold; text-align:center; margin-bottom:10px;">
-      VW Group Parts Theo
-    </div>
+    <div class="footer-inner">
 
-    <div style="text-align:center;">
-      Επικοινωνία | Facebook Marketplace | car.gr
+      <div class="footer-left">
+        <div class="footer-brand">VW Group Parts Theo</div>
+        <div class="footer-sub">Ανταλλακτικά εσωτερικού χώρου VW Group</div>
+      </div>
+
+      <div class="footer-center">
+        <div>📞 Τηλέφωνο: 69XXXXXXXX</div>
+        <div>📱 Viber διαθέσιμο</div>
+        <div>✉️ Email</div>
+      </div>
+
+      <div class="footer-right">
+        <div>car.gr</div>
+        <div>Skroutz</div>
+      </div>
+
     </div>
 
   </div>
