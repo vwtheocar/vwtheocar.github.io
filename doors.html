@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Χειρολαβές Πόρτας - VW Group Parts Theo</title>
+  <title>Χειρολαβές Πόρτας</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,22 +10,20 @@
     body {
       font-family: Arial;
       margin: 0;
-      padding: 80px 0 0 0;
+      padding-top: 80px;
       background-color: #f5f5f5;
       color: #111;
       text-align: center;
     }
 
-    /* HEADER */
     .header {
       background: linear-gradient(90deg, #003399, #002a6b);
       color: white;
-      padding: 20px 10px;
-      text-align: center;
+      padding: 25px 10px;
     }
 
     .title {
-      font-size: 26px;
+      font-size: 28px;
       font-weight: bold;
     }
 
@@ -35,32 +33,32 @@
       margin-top: 5px;
     }
 
-    /* CONTENT */
     .box {
-      max-width: 800px;
+      max-width: 700px;
       margin: 30px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      border: 1px solid #ddd;
       text-align: left;
     }
 
     .item {
+      display: flex;
+      align-items: center;
+      background: white;
       padding: 12px;
-      border-bottom: 1px solid #eee;
-    }
-
-    .item:last-child {
-      border-bottom: none;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
     }
 
     .code {
       font-weight: bold;
       color: #003399;
+      min-width: 140px;
     }
 
-    /* BACK BUTTON */
+    .desc {
+      font-size: 14px;
+    }
+
     .back {
       display: inline-block;
       margin-top: 20px;
@@ -75,6 +73,17 @@
       background: #002266;
     }
 
+    @media (max-width: 768px) {
+      .item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+
+      .code {
+        min-width: auto;
+      }
+    }
   </style>
 </head>
 
@@ -83,31 +92,30 @@
   <!-- HEADER -->
   <div class="header">
     <div class="title">Χειρολαβές Πόρτας</div>
-    <div class="subtitle">VW Group εσωτερικού χώρου ανταλλακτικά</div>
+    <div class="subtitle">VW Group ανταλλακτικά εσωτερικού χώρου</div>
   </div>
 
   <!-- CONTENT -->
   <div class="box">
 
     <div class="item">
-      <div class="code">Κωδικός: 1K0837113</div>
-      Χειρολαβή πόρτας Golf / Passat / Octavia
+      <div class="code">1K0837113</div>
+      <div class="desc">Χειρολαβή πόρτας VW Golf / Passat / Octavia</div>
     </div>
 
     <div class="item">
-      <div class="code">Κωδικός: 3B0837205</div>
-      Εσωτερική χειρολαβή πόρτας VW Group
+      <div class="code">3B0837205</div>
+      <div class="desc">Εσωτερική χειρολαβή VW Group</div>
     </div>
 
     <div class="item">
-      <div class="code">Κωδικός: 8E0837207</div>
-      Audi A4 εσωτερική χειρολαβή
+      <div class="code">8E0837207</div>
+      <div class="desc">Audi A4 εσωτερική χειρολαβή</div>
     </div>
 
   </div>
 
-  <!-- BACK -->
-  <a href="index.html" class="back">⬅ Πίσω στην αρχική</a>
+  <a class="back" href="index.html">⬅ Πίσω</a>
 
 </body>
 
