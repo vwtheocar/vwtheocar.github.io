@@ -1,111 +1,312 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html>
 
-<style>
-@media (max-width: 768px) {
+<head>
+  <title>VW Group Parts Theo</title>
 
-  img {
-    width: 50px !important;
-    height: 50px !important;
-  }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  h1 {
-    font-size: 24px !important;
-  }
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      padding-top: 80px;
+      background-color: #f5f5f5;
+      color: #111;
+      text-align: center;
+    }
 
-  div[style*="font-weight:bold"] {
-    font-size: 14px !important;
-  }
+    .header {
+      background: linear-gradient(90deg, #003399, #002a6b);
+      color: white;
+      padding: 28px 10px;
+    }
 
-  div[style*="background:#e8f0ff"] {
-    font-size: 16px !important;
-    padding: 16px !important;
-    background: #d6e6ff !important;
-  }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-  div[style*="fff7f0"] {
-    font-size: 13px !important;
-    padding: 14px !important;
-  }
+    .title {
+      text-align: center;
+      flex: 1;
+    }
 
-}
-</style>
+    .title-main {
+      font-size: 36px;
+      font-weight: 700;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    }
+
+    .title-sub {
+      font-size: 14px;
+      margin-top: 6px;
+      opacity: 0.9;
+    }
+
+    .logos {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .logos img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .desc {
+      max-width: 700px;
+      margin: 25px auto;
+      padding: 15px;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+
+    /* CATEGORIES */
+    .category {
+      display: flex;
+      align-items: center;
+      background: #e8f0ff;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #111;
+      border: 1px solid #c9dbff;
+      font-size: 15px;
+    }
+
+    .dot {
+      margin-right: 10px;
+      color: #003399;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      background: #dfe9ff;
+      border-radius: 8px;
+      margin-right: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6b7aa8;
+      font-size: 12px;
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 60px;
+      padding: 25px 10px;
+      background: #002a6b;
+      color: white;
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-block {
+      flex: 1;
+    }
+
+    .footer-left {
+      text-align: left;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .footer-sub {
+      font-weight: normal;
+      font-size: 12px;
+      margin-top: 6px;
+      opacity: 0.9;
+    }
+
+    .footer-center {
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .footer-right {
+      text-align: right;
+    }
+
+    .footer-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: orange;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+      .header-inner {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .logos {
+        justify-content: center;
+      }
+
+      .title-main {
+        font-size: 26px;
+      }
+
+      .category {
+        font-size: 16px;
+        padding: 16px;
+        background: #d6e6ff;
+      }
+
+      .icon {
+        width: 70px;
+        height: 70px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+
+      .footer-left,
+      .footer-center,
+      .footer-right {
+        text-align: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
 
   <!-- HEADER -->
-  <div style="padding: 30px; background-color: #003399; color: white;">
-    <h1 style="margin: 0;">Χειρολαβές Πόρτας</h1>
-  </div>
+  <div class="header">
 
-  <!-- BACK BUTTON -->
-  <p style="margin-top: 20px;">
-    <a href="index.html" style="color: #003399; font-weight: bold; text-decoration: none;">
-      ← Επιστροφή στην αρχική
-    </a>
-  </p>
-  <div style="margin-top: 20px;">
-  <button onclick="filterCards('all')" style="padding:8px 12px; margin:5px;">Όλα</button>
-  <button onclick="filterCards('golf')" style="padding:8px 12px; margin:5px;">Volkswagen</button>
-  <button onclick="filterCards('passat')" style="padding:8px 12px; margin:5px;">Skoda</button>
-  <button onclick="filterCards('audi')" style="padding:8px 12px; margin:5px;">Audi</button>
-  <button onclick="filterCards('audi')" style="padding:8px 12px; margin:5px;">Seat</button>
-</div>
+    <div class="header-inner">
 
-  <!-- CONTENT -->
-  <div style="text-align: center; margin-top: 40px;">
-
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-
-      <!-- CARD 1 -->
-      <div class="card golf" style="padding: 18px; border: 1px solid #ddd; background-color: #ffffff; width: 260px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-        <h3>Χειρολαβή Οδηγού VW Golf 5</h3>
-        <p>Κωδικός: 1K0 XXXX</p>
-        <p><b>Διαθέσιμο</b></p>
-
-        <a href="#" style="display:inline-block; margin-top:10px; padding:8px 12px; background-color:#003399; color:white; text-decoration:none; border-radius:5px;">
-          Λεπτομέρειες
-        </a>
+      <div class="title">
+        <div class="title-main">VW Group Parts Theo</div>
+        <div class="title-sub">Ανταλλακτικά εσωτερικού χώρου</div>
       </div>
 
-      <!-- CARD 2 -->
-      <div class="card golf" style="padding: 18px; border: 1px solid #ddd; background-color: #ffffff; width: 260px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-        <h3>Χειρολαβή Συνοδηγού VW Golf 5</h3>
-        <p>Κωδικός: 1K0 XXXX</p>
-        <p><b>Διαθέσιμο</b></p>
-
-        <a href="#" style="display:inline-block; margin-top:10px; padding:8px 12px; background-color:#003399; color:white; text-decoration:none; border-radius:5px;">
-          Λεπτομέρειες
-        </a>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="card golf" style="padding: 18px; border: 1px solid #ddd; background-color: #ffffff; width: 260px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-        <h3>Χειρολαβές Πίσω VW Golf 5</h3>
-        <p>Κωδικός: 1K0 XXXX</p>
-        <p><b>Διαθέσιμο</b></p>
-
-        <a href="#" style="display:inline-block; margin-top:10px; padding:8px 12px; background-color:#003399; color:white; text-decoration:none; border-radius:5px;">
-          Λεπτομέρειες
-        </a>
+      <div class="logos">
+        <img src="vw.png">
+        <img src="audi.png">
+        <img src="skoda.png">
+        <img src="seat.png">
       </div>
 
     </div>
 
   </div>
-<script>
-function filterCards(type) {
-  const cards = document.querySelectorAll('.card');
 
-  cards.forEach(card => {
-    if (type === 'all') {
-      card.style.display = 'block';
-    } else {
-      if (card.classList.contains(type)) {
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
-    }
-  });
-}
-</script>
+  <!-- DESCRIPTION -->
+  <div class="desc">
+    Εξειδίκευση σε ανταλλακτικά VW Group εσωτερικού χώρου, με επιλεγμένα aftermarket και γνήσια μεταχειρισμένα είδη.
+    Έμφαση σε δυσεύρετα και σπάνια κομμάτια.
+  </div>
+
+  <!-- CTA -->
+  <div style="margin-top:15px; font-size:18px;">
+    👇 Βρες εδώ αυτό που ψάχνεις
+  </div>
+
+  <!-- CATEGORIES -->
+  <div style="max-width:650px; margin:30px auto; text-align:left;">
+
+    <a href="doors.html" class="category">
+      <span class="dot">●</span>
+      <div class="icon">εικόνα</div>
+      Χειρολαβές Πόρτας
+    </a>
+
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Χειρολαβές Ουρανού</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Διακόπτες</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Αεραγωγοί</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Τεμπέληδες, Κλιπς & Εξαρτήματα</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Κονσόλες</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Σκιάδια, Κλιπς & Εξαρτήματα</div>
+    <div class="category"><span class="dot">●</span><div class="icon">εικόνα</div>Πλαφονιέρες</div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-block footer-left">
+        VW Group Parts Theo
+        <div class="footer-sub">Ανταλλακτικά εσωτερικού χώρου</div>
+      </div>
+
+      <div class="footer-block footer-center">
+
+        <div class="footer-title">ΕΠΙΚΟΙΝΩΝΙΑ</div>
+
+        <div>
+          📞 <a href="tel:6987168152">6987168152</a> |
+          📱 <a href="https://wa.me/6987168152">Viber</a>
+        </div>
+
+        <div>
+          ✉️ <a href="mailto:theo01475@yahoo.gr">theo01475@yahoo.gr</a>
+        </div>
+
+      </div>
+
+      <div class="footer-block footer-right">
+
+        <div class="footer-title">LINKS</div>
+
+        <div class="footer-links">
+          <a href="https://www.car.gr/user/7gtmib/" target="_blank">car.gr</a>
+          <a href="https://www.skroutz.gr/u/theo1410/skoop" target="_blank">Skroutz</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </body>
+
 </html>
